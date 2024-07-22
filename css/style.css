@@ -410,7 +410,7 @@ mb-3 {
 
 /* ------- MEDIA QUERIES  1050--------*/
 
-@media (max-width: 1050px) {
+@media (max-width: 1110px) {
 
     header h1 {
         font-size: 80px;
@@ -442,6 +442,11 @@ mb-3 {
         height: 300px;
         margin-top: 40px;
     }
+
+    .trekkings-inf p {
+        margin: 20px;
+    }
+
 
     .trekkings-inf p {
         text-align: center;
