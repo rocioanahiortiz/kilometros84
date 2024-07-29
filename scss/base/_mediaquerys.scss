@@ -1,0 +1,383 @@
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES  1110--------*/
+
+@media (max-width: 1110px) {
+
+    header h1 {
+        font-size: 80px;
+    }
+
+    .mainindex .trekkings-grilla {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-fotos {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-fotos img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf iframe {
+        width: 500px;
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf p {
+        margin: 20px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf p {
+        text-align: center;
+    }
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
+
+}
+
+
+/* ------- MEDIA QUERIES TREKKING 840 --------*/
+
+@media (max-width: 890px) {
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 300px;
+        width: 400px;
+        padding: 20px;
+    }
+
+}
+
+
+/* ------- MEDIA QUERIES TREKKING 775--------*/
+
+@media (max-width: 775px) {
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
+
+}
+
+
+/* ------- MEDIA QUERIES TREKKING 720 --------*/
+
+
+@media (max-width: 720px) {
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    .mainindex .presentacion h2 {
+        font-size: 40px;
+    }
+
+    .mainindex .presentacion p {
+        margin: 30px;
+    }
+
+    .mainindex .cascadas h2,
+    .mainindex .otrasaventuras h2 {
+        font-size: 30px;
+    }
+
+    .mainindex .cascadas h3 {
+        font-size: 18px;
+    }
+
+    .mainindex .beneficios {
+        padding-top: 20px;
+    }
+
+    .mainindex .beneficios h2 {
+        font-size: 20px;
+    }
+
+    .mainindex .beneficios h3 {
+        font-size: 20px;
+    }
+
+    .mainindex .beneficios p {
+        font-size: 18px;
+    }
+
+    .mainindex .beneficios div h4 {
+        font-size: 20px;
+    }
+
+    .mainindex .trekkings-fotos img {
+        max-width: 250px;
+        height: 250px;
+        margin: 10px;
+    }
+
+    .mainindex .trekkings-inf iframe {
+        width: 400px;
+        height: 300px;
+        margin-top: 40px;
+    }
+}
+
+/* ------- MEDIA QUERIES 650--------*/
+
+@media (max-width: 650px) {
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    .mainindex .presentacion h2 {
+        font-size: 45px;
+    }
+
+
+    .mainindex .presentacion p {
+        margin: 25px;
+    }
+
+    .mainindex .cascadas h2,
+    .mainindex .otrasaventuras h2 {
+        font-size: 25px;
+    }
+
+    .mainindex .cascadas .agua h3,
+    .mainindex .otrasaventuras .aventuras-tarjetas h4 {
+        font-size: 20px;
+
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5 fr;
+    }
+
+    footer h5 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .cascadas .agua div h3 {
+        font-size: 20px;
+    }
+
+    .cascadas .agua div h3 a {
+        font-size: 18px;
+    }
+
+    .cascadas h2 {
+        font-size: 30px;
+    }
+
+
+    .mainindex .cascadas .agua h3,
+    .mainindex .otrasaventuras .aventuras-tarjetas h3 {
+        font-size: 20px;
+
+    }
+
+    .redessociales {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .redessociales a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-fotos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-fotos div {
+        align-items: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-fotos img {
+        width: 100%;
+        max-width: 280px;
+        height: 280px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf iframe {
+        width: 500px;
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 300px;
+        width: 400px;
+        padding: 20px;
+    }
+}
+
+/* ------- MEDIA QUERIES  550 --------*/
+
+
+@media (max-width: 550px) {
+
+    header h1 {
+        color: white;
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    .presentacion h2 {
+        font-size: 40px;
+    }
+
+    .redessociales {
+        flex-wrap: wrap;
+        font-size: 15px;
+        padding: 10px;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redessociales a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mainindex .beneficios img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mainindex .trekkings-grilla .trekkings-inf iframe {
+        width: 300px;
+        height: 300px;
+        margin-top: 40px;
+    }
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 300px;
+        width: 300px;
+        padding: 20px;
+    }
+}
+
+/* ------- MEDIA QUERIES  424--------*/
+
+@media (max-width: 420px) {
+
+    .mainindex .presentacion h2 {
+        font-size: 35px;
+    }
+
+    .mainindex .presentacion p {
+        font-size: 25px;
+        color: black;
+    }
+
+    .mainindex .cascadas div img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+
+/* ------- MEDIA QUERIES  1050--------*/
+
+@media (max-width: 1060px) {
+
+    .mainindex .aventuras .aventurasimg img {
+        height: 300px;
+        width: 450px;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    .mainindex .aventuras .aventurasimg img {
+        height: 350px;
+        width: 350px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .mainindex .aventuras .aventurasimg img {
+        height: 300px;
+        width: 300px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mainindex .aventuras .aventurasimg img {
+        height: 300px;
+        width: 500px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .mainindex .aventuras .aventurasimg img {
+        height: 300px;
+        width: 400px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .mainindex .aventuras .aventurasimg img {
+        height: 300px;
+        width: 300px;
+        padding: 15px;
+    }
+}

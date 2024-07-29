@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: rgb(51, 59, 28);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+header h1 {
+  color: white;
+  font-size: 80px;
+}
+header .navbar .container-fluid {
+  background-color: rgb(51, 59, 28);
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+  font-size: 20px;
+  color: white !important;
+}
+
+/* ------- MAIN PAGE INDEX --------*/
+.mainindex {
+  background-image: url(../img/extras/1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.mainindex .presentacion {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/iconos/header.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.mainindex .presentacion h2 {
+  font-size: 60px;
+  color: white;
+}
+.mainindex .presentacion p {
+  margin: 40px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.mainindex .cascadas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mainindex .cascadas h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+.mainindex .cascadas .agua {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainindex .cascadas .agua div {
+  background-color: rgba(0, 0, 0, 0.381);
+  margin: 20px;
+}
+.mainindex .cascadas .agua div img {
+  width: 300px;
+  height: 300px;
+}
+.mainindex .cascadas .agua div h3 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+.mainindex .cascadas .agua div h3 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.mainindex .otrasaventuras h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+.mainindex .otrasaventuras .aventuras-index {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas {
+  height: 500px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.381);
+  margin: 20px;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas img {
+  width: 300px;
+  height: 300px;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas p {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h4 {
+  font-size: 22px;
+  text-align: center;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h4 a {
+  text-decoration: none;
+  color: white;
+}
+.mainindex .beneficios {
+  color: white;
+  padding-top: 40px;
+}
+.mainindex .beneficios div h2 {
+  color: rgb(167, 177, 100);
+  text-align: center;
+}
+.mainindex .beneficios div h3 {
+  color: rgb(178, 136, 62);
+  text-align: center;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mainindex .beneficios div p {
+  font-size: 20px;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mainindex .beneficios div h4 {
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(167, 177, 100);
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mainindex .beneficios .indeximagenes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mainindex .beneficios .indeximagenes img {
+  height: 300px;
+  width: 500px;
+  padding: 20px;
+}
+
+/* ------- MAIN PAG TREKKINGS --------*/
+.mainindex h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.373);
+}
+.mainindex .trekkings-grilla {
+  width: 100%;
+  display: grid;
+  height: 900px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.mainindex .trekkings-grilla .trekkings-inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainindex .trekkings-grilla .trekkings-inf h3 {
+  align-content: center;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.248);
+}
+.mainindex .trekkings-grilla .trekkings-inf p {
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  text-align: center;
+}
+.mainindex .trekkings-grilla .trekkings-inf h4 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.248);
+}
+.mainindex .trekkings-grilla .trekkings-inf iframe {
+  width: 450px;
+  height: 300px;
+  margin-left: 10px;
+}
+.mainindex .trekkings-grilla .trekkings-fotos {
+  display: flex;
+  align-items: star;
+  justify-content: space-around;
+  margin: 20px;
+}
+.mainindex .trekkings-grilla .trekkings-fotos img {
+  width: 300px;
+  height: 330px;
+  margin: 20px;
+}
+
+/* ------- MAIN PAG AVENTURAS --------*/
+.aventuras {
+  padding: 10px;
+}
+.aventuras div h2 {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.333);
+  font-size: 30px;
+  text-align: center;
+}
+.aventuras div p {
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+.aventuras .aventurasimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.aventuras .aventurasimg img {
+  height: 250px;
+  width: 250px;
+  margin: 5px;
+}
+
+/* ------- MAIN PAGE PRECAUCIONES --------*/
+.mainindex .precauciones {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.mainindex .equipamiento {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ------- MAIN PAGE NOSOTROS --------*/
+.mainindex .grillafotos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+.mainindex .grillafotos .grid-item {
+  position: relative;
+}
+.mainindex .grillafotos .grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mainindex .grillafotos .grid-item.grid-uno {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.mainindex .grillafotos .grid-item.grid-dos {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-tres {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-cuatro {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-cinco {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.mainindex .grillafotos .grid-item.grid-seis {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-siete {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-ocho {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.mainindex .grillafotos .grid-item.grid-nueve {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.mainindex .nosotros p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 20px;
+}
+.mainindex .nosotros .mb-3 {
+  padding: 20px;
+  align-items: center;
+}
+.mainindex .nosotros .mb-3 .form-label {
+  font-size: 20px;
+  color: rgb(178, 136, 62);
+}
+
+footer {
+  background-color: rgb(51, 59, 28);
+  width: 100%;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 0, 5fr;
+  padding: 10px;
+  margin: 0;
+}
+footer .logofooter h5 {
+  text-align: center;
+  font-size: 70px;
+  padding: 10px;
+  color: black;
+}
+footer .redessociales {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .redessociales p {
+  color: white;
+  text-align: center;
+}
+footer .redessociales a {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+footer .redessociales a img {
+  width: 50px;
+  height: 50px;
+}
+footer .derechos {
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+footer .derechos p {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES  1110--------*/
+@media (max-width: 1110px) {
+  header h1 {
+    font-size: 80px;
+  }
+  .mainindex .trekkings-grilla {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .mainindex .trekkings-grilla .trekkings-fotos {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-fotos img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf iframe {
+    width: 500px;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf p {
+    margin: 20px;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf p {
+    text-align: center;
+  }
+  .mainindex .beneficios .indeximagenes img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES TREKKING 840 --------*/
+@media (max-width: 890px) {
+  .mainindex .beneficios .indeximagenes img {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES TREKKING 775--------*/
+@media (max-width: 775px) {
+  .mainindex .beneficios .indeximagenes img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES TREKKING 720 --------*/
+@media (max-width: 720px) {
+  header h1 {
+    font-size: 60px;
+  }
+  .mainindex .presentacion h2 {
+    font-size: 40px;
+  }
+  .mainindex .presentacion p {
+    margin: 30px;
+  }
+  .mainindex .cascadas h2,
+  .mainindex .otrasaventuras h2 {
+    font-size: 30px;
+  }
+  .mainindex .cascadas h3 {
+    font-size: 18px;
+  }
+  .mainindex .beneficios {
+    padding-top: 20px;
+  }
+  .mainindex .beneficios h2 {
+    font-size: 20px;
+  }
+  .mainindex .beneficios h3 {
+    font-size: 20px;
+  }
+  .mainindex .beneficios p {
+    font-size: 18px;
+  }
+  .mainindex .beneficios div h4 {
+    font-size: 20px;
+  }
+  .mainindex .trekkings-fotos img {
+    max-width: 250px;
+    height: 250px;
+    margin: 10px;
+  }
+  .mainindex .trekkings-inf iframe {
+    width: 400px;
+    height: 300px;
+    margin-top: 40px;
+  }
+}
+/* ------- MEDIA QUERIES 650--------*/
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 50px;
+  }
+  .mainindex .presentacion h2 {
+    font-size: 45px;
+  }
+  .mainindex .presentacion p {
+    margin: 25px;
+  }
+  .mainindex .cascadas h2,
+  .mainindex .otrasaventuras h2 {
+    font-size: 25px;
+  }
+  .mainindex .cascadas .agua h3,
+  .mainindex .otrasaventuras .aventuras-tarjetas h4 {
+    font-size: 20px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5 fr;
+  }
+  footer h5 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .cascadas .agua div h3 {
+    font-size: 20px;
+  }
+  .cascadas .agua div h3 a {
+    font-size: 18px;
+  }
+  .cascadas h2 {
+    font-size: 30px;
+  }
+  .mainindex .cascadas .agua h3,
+  .mainindex .otrasaventuras .aventuras-tarjetas h3 {
+    font-size: 20px;
+  }
+  .redessociales {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .redessociales a img {
+    width: 40px;
+    height: 40px;
+  }
+  .mainindex .trekkings-grilla .trekkings-fotos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-fotos div {
+    align-items: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-fotos img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf h4 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf iframe {
+    width: 500px;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .mainindex .beneficios .indeximagenes img {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES  550 --------*/
+@media (max-width: 550px) {
+  header h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  .presentacion h2 {
+    font-size: 40px;
+  }
+  .redessociales {
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .redessociales a img {
+    width: 40px;
+    height: 40px;
+  }
+  .mainindex .beneficios img {
+    height: 250px;
+    width: 250px;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .mainindex .trekkings-grilla .trekkings-inf iframe {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+  }
+  .mainindex .beneficios .indeximagenes img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES  424--------*/
+@media (max-width: 420px) {
+  .mainindex .presentacion h2 {
+    font-size: 35px;
+  }
+  .mainindex .presentacion p {
+    font-size: 25px;
+    color: black;
+  }
+  .mainindex .cascadas div img {
+    width: 250px;
+    height: 250px;
+  }
+}
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES  1050--------*/
+@media (max-width: 1060px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 300px;
+    width: 450px;
+    padding: 15px;
+  }
+}
+@media (max-width: 920px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 350px;
+    width: 350px;
+    padding: 15px;
+  }
+}
+@media (max-width: 820px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 300px;
+    width: 500px;
+    padding: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 300px;
+    width: 400px;
+    padding: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .mainindex .aventuras .aventurasimg img {
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
