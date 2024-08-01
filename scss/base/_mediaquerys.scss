@@ -1,4 +1,4 @@
-/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS + footer-------*/
 /* ------- MEDIA QUERIES  1110--------*/
 
 @media (max-width: 1110px) {
@@ -48,7 +48,7 @@
 }
 
 
-/* ------- MEDIA QUERIES TREKKING 840 --------*/
+/* ------- MEDIA QUERIES 840 --------*/
 
 @media (max-width: 890px) {
 
@@ -61,7 +61,7 @@
 }
 
 
-/* ------- MEDIA QUERIES TREKKING 775--------*/
+/* ------- MEDIA QUERIES  775--------*/
 
 @media (max-width: 775px) {
 
@@ -74,7 +74,7 @@
 }
 
 
-/* ------- MEDIA QUERIES TREKKING 720 --------*/
+/* ------- MEDIA QUERIES 720 --------*/
 
 
 @media (max-width: 720px) {
@@ -130,6 +130,10 @@
         width: 400px;
         height: 300px;
         margin-top: 40px;
+    }
+
+    footer {
+        height: auto;
     }
 }
 
@@ -326,11 +330,11 @@
 }
 
 
-/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES PAGE AVENTURAS -------*/
 
 /* ------- MEDIA QUERIES  1050--------*/
 
-@media (max-width: 1060px) {
+@media (max-width: 1169px) {
 
     .mainindex .aventuras .aventurasimg img {
         height: 300px;
@@ -380,4 +384,104 @@
         width: 300px;
         padding: 15px;
     }
+}
+
+
+/* ------- MEDIA QUERIES PAGE PRECAUCIONES -------*/
+/* ------- MEDIA QUERIES  1200--------*/
+
+@media (max-width: 1200px) {
+    .mainindex .precauciones .imgprecauciones {
+        flex-wrap: wrap;
+    }
+
+    .mainindex .precauciones .imgprecauciones img {
+        height: 400px;
+        width: 500px;
+        padding: 20px;
+    }
+
+}
+
+/* ------- MEDIA QUERIES  950--------*/
+
+@media (max-width: 1050px) {
+    .mainindex .precauciones .imgprecauciones img {
+        height: 450px;
+        width: 700px;
+        padding: 20px;
+    }
+
+    .mainindex  .equipamiento {
+        flex-wrap: wrap;
+    }
+
+    .mainindex .equipamiento div img {
+        height: 500px;
+        width: 700px;
+
+    }
+
+}
+
+/* ------- MEDIA QUERIES  800--------*/
+
+@media (max-width: 800px) {
+    .mainindex .precauciones .imgprecauciones img {
+        height: 450px;
+        width: 500px;
+
+    }
+
+    .mainindex .equipamiento div img {
+        height: 500px;
+        width: 500px;
+
+    }
+
+}
+
+@media (max-width: 550px) {
+    .mainindex .precauciones .imgprecauciones img {
+        height: 350px;
+        width: 400px;
+
+    }
+
+    .mainindex .equipamiento div img {
+        height: 400px;
+        width: 400px;
+
+    }
+
+}
+
+@media (max-width: 450px) {
+    .mainindex .precauciones .imgprecauciones img {
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .mainindex .equipamiento div img {
+        height: 400px;
+        width: 400px;
+
+    }
+
+}
+
+@media (max-width: 400px) {
+    .mainindex .precauciones .imgprecauciones img {
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .mainindex .equipamiento div img {
+        height: 350px;
+        width: 350px;
+
+    }
+
 }

@@ -1,6 +1,6 @@
 /* ------- MAIN PAGE INDEX --------*/
 
-.mainindex{
+.mainindex {
     background-image: url(../img/extras/1.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -22,9 +22,10 @@
 
         p {
             margin: 40px;
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 25px;
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.071);
         }
     }
 
@@ -61,10 +62,12 @@
                     text-align: center;
                     margin-top: 10px;
 
+
                     a {
                         text-decoration: none;
                         font-size: 20px;
                         color: rgb(255, 255, 255);
+
                     }
                 }
             }
@@ -181,17 +184,20 @@
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.373);
     }
+
     .trekkings-grilla {
         width: 100%;
         display: grid;
         height: 900px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+
         .trekkings-inf {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+
             h3 {
                 align-content: center;
                 font-size: 28px;
@@ -201,12 +207,14 @@
                 width: 100%;
                 background-color: rgba(0, 0, 0, 0.248);
             }
+
             p {
                 font-size: 20px;
                 color: white;
                 margin-left: 10px;
                 text-align: center;
             }
+
             h4 {
                 font-size: 25px;
                 color: white;
@@ -214,24 +222,29 @@
                 width: 100%;
                 background-color: rgba(0, 0, 0, 0.248);
             }
+
             iframe {
                 width: 450px;
                 height: 300px;
                 margin-left: 10px;
             }
-        }  
-        .trekkings-fotos { display: flex;
+        }
+
+        .trekkings-fotos {
+            display: flex;
             align-items: star;
             justify-content: space-around;
             margin: 20px;
-            img {   width: 300px;
+
+            img {
+                width: 300px;
                 height: 330px;
                 margin: 20px;
 
             }
 
-        } 
-        
+        }
+
     }
 
 }
@@ -259,17 +272,16 @@
     }
 
     .aventurasimg {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flex (flex, space-around, center);
         flex-wrap: wrap;
 
 
+
         img {
-            height: 250px;
-            width: 250px;
+            height: 270px;
+            width: 270px;
             margin: 5px;
-    
+
         }
     }
 }
@@ -281,35 +293,85 @@
         color: white;
         font-size: 20px;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .imgprecauciones {
+        @include flex (flex, space-around, center);
+
+        img {
+            height: 350px;
+            width: 400px;
+            padding: 10px;
+
+        }
     }
 
     .equipamiento {
+        display: flex;
         color: white;
         font-size: 20px;
         text-align: center;
         padding: 20px;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            h2 {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+            }
+
+            p {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+                padding: 10px;
+
+            }
+
+            h4 {
+                font-size: 30px;
+                text-align: center;
+            }
+
+        }
+
+        div {
+            img {
+                height: 350px;
+                width: 500px;
+                padding: 20px;
+
+            }
+
+        }
+
+
+
     }
 }
 
+
 /* ------- MAIN PAGE NOSOTROS --------*/
 
-.mainindex { 
+.mainindex {
 
-.grillafotos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px;
-    padding: 20px;
+    .grillafotos {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        padding: 20px;
 
-    .grid-item {
-        position: relative;
+        .grid-item {
+            position: relative;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
             &.grid-uno {
                 grid-column: span 2;
@@ -358,7 +420,7 @@
         }
     }
 
-.nosotros {
+    .nosotros {
         p {
             font-size: 20px;
             color: white;

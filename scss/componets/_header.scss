@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(51, 59, 28);
+    background-color:$color-principal;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,10 @@ header {
 
     .navbar {
         .container-fluid {
-            background-color: rgb(51, 59, 28);
+            background-color:$color-principal;
+            .navbar-toggler {
+                background-color: white;
+            }
 
             .collapse {
                 .navbar-nav {

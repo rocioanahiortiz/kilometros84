@@ -5,6 +5,8 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+/* ------- VARIABLES  --------*/
+/* ------- MIXINS --------*/
 header {
   background-color: rgb(51, 59, 28);
   padding: 10px;
@@ -18,6 +20,9 @@ header h1 {
 }
 header .navbar .container-fluid {
   background-color: rgb(51, 59, 28);
+}
+header .navbar .container-fluid .navbar-toggler {
+  background-color: white;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   font-size: 20px;
@@ -46,9 +51,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 }
 .mainindex .presentacion p {
   margin: 40px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.071);
 }
 .mainindex .cascadas {
   width: 100%;
@@ -246,13 +252,13 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 }
 .aventuras .aventurasimg {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 .aventuras .aventurasimg img {
-  height: 250px;
-  width: 250px;
+  height: 270px;
+  width: 270px;
   margin: 5px;
 }
 
@@ -261,12 +267,45 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   color: white;
   font-size: 20px;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+}
+.mainindex .imgprecauciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainindex .imgprecauciones img {
+  height: 350px;
+  width: 400px;
+  padding: 10px;
 }
 .mainindex .equipamiento {
+  display: flex;
   color: white;
   font-size: 20px;
   text-align: center;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.mainindex .equipamiento div h2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.mainindex .equipamiento div p {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.mainindex .equipamiento div h4 {
+  font-size: 30px;
+  text-align: center;
+}
+.mainindex .equipamiento div img {
+  height: 350px;
+  width: 500px;
   padding: 20px;
 }
 
@@ -342,27 +381,29 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 footer {
   background-color: rgb(51, 59, 28);
   width: 100%;
+  height: 300px;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr 0, 5fr;
   padding: 10px;
   margin: 0;
 }
-footer .logofooter h5 {
-  text-align: center;
-  font-size: 70px;
-  padding: 10px;
-  color: black;
-}
 footer .redessociales {
   display: flex;
   font-size: 20px;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-footer .redessociales p {
+footer .redessociales h5 {
+  text-align: start;
+  font-size: 70px;
+  padding: 10px;
   color: white;
+}
+footer .redessociales p {
+  color: black;
   text-align: center;
+  padding: 20px;
 }
 footer .redessociales a {
   width: 50px;
@@ -378,13 +419,13 @@ footer .derechos {
   grid-row: 3/4;
 }
 footer .derechos p {
-  color: black;
+  color: white;
   font-size: 18px;
   padding: 10px;
   text-align: center;
 }
 
-/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS + footer-------*/
 /* ------- MEDIA QUERIES  1110--------*/
 @media (max-width: 1110px) {
   header h1 {
@@ -422,7 +463,7 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES TREKKING 840 --------*/
+/* ------- MEDIA QUERIES 840 --------*/
 @media (max-width: 890px) {
   .mainindex .beneficios .indeximagenes img {
     height: 300px;
@@ -430,7 +471,7 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES TREKKING 775--------*/
+/* ------- MEDIA QUERIES  775--------*/
 @media (max-width: 775px) {
   .mainindex .beneficios .indeximagenes img {
     height: 300px;
@@ -438,7 +479,7 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES TREKKING 720 --------*/
+/* ------- MEDIA QUERIES 720 --------*/
 @media (max-width: 720px) {
   header h1 {
     font-size: 60px;
@@ -480,6 +521,9 @@ footer .derechos p {
     width: 400px;
     height: 300px;
     margin-top: 40px;
+  }
+  footer {
+    height: auto;
   }
 }
 /* ------- MEDIA QUERIES 650--------*/
@@ -629,9 +673,9 @@ footer .derechos p {
     height: 250px;
   }
 }
-/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS -------*/
+/* ------- MEDIA QUERIES PAGE AVENTURAS -------*/
 /* ------- MEDIA QUERIES  1050--------*/
-@media (max-width: 1060px) {
+@media (max-width: 1169px) {
   .mainindex .aventuras .aventurasimg img {
     height: 300px;
     width: 450px;
@@ -671,5 +715,73 @@ footer .derechos p {
     height: 300px;
     width: 300px;
     padding: 15px;
+  }
+}
+/* ------- MEDIA QUERIES PAGE PRECAUCIONES -------*/
+/* ------- MEDIA QUERIES  1200--------*/
+@media (max-width: 1200px) {
+  .mainindex .precauciones .imgprecauciones {
+    flex-wrap: wrap;
+  }
+  .mainindex .precauciones .imgprecauciones img {
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES  950--------*/
+@media (max-width: 1050px) {
+  .mainindex .precauciones .imgprecauciones img {
+    height: 450px;
+    width: 700px;
+    padding: 20px;
+  }
+  .mainindex .equipamiento {
+    flex-wrap: wrap;
+  }
+  .mainindex .equipamiento div img {
+    height: 500px;
+    width: 700px;
+  }
+}
+/* ------- MEDIA QUERIES  800--------*/
+@media (max-width: 800px) {
+  .mainindex .precauciones .imgprecauciones img {
+    height: 450px;
+    width: 500px;
+  }
+  .mainindex .equipamiento div img {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .mainindex .precauciones .imgprecauciones img {
+    height: 350px;
+    width: 400px;
+  }
+  .mainindex .equipamiento div img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .mainindex .precauciones .imgprecauciones img {
+    height: 350px;
+    width: 350px;
+  }
+  .mainindex .equipamiento div img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .mainindex .precauciones .imgprecauciones img {
+    height: 300px;
+    width: 300px;
+  }
+  .mainindex .equipamiento div img {
+    height: 350px;
+    width: 350px;
   }
 }/*# sourceMappingURL=estilos.css.map */
