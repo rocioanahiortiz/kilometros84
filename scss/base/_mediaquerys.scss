@@ -48,6 +48,24 @@
 }
 
 
+/* ------- MEDIA QUERIES 950 --------*/
+
+@media (max-width: 950px) {
+
+    .mainindex .beneficios {
+        flex-wrap: wrap;
+    }
+
+    .mainindex .beneficios .indeximagenes img {
+        height: 400px;
+        width: 400px;
+
+    }
+
+}
+
+
+
 /* ------- MEDIA QUERIES 840 --------*/
 
 @media (max-width: 890px) {
@@ -403,85 +421,101 @@
 
 }
 
-/* ------- MEDIA QUERIES  950--------*/
+/* ------- MEDIA QUERIES  1050--------*/
 
 @media (max-width: 1050px) {
-    .mainindex .precauciones .imgprecauciones img {
-        height: 450px;
-        width: 700px;
+    .mainindex .precauciones {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+
+    }
+    .mainindex .precauciones div img {
+        height: 300px;
+        width: 300px;
         padding: 20px;
+        
     }
 
-    .mainindex  .equipamiento {
+    .mainindex .equipamiento {
         flex-wrap: wrap;
+        
     }
 
     .mainindex .equipamiento div img {
-        height: 500px;
-        width: 700px;
+        height: 400px;
+        width: 600px;
 
     }
 
 }
 
+/* ------- MEDIA QUERIES  950--------*/
+
+@media (max-width: 950px) {
+    .mainindex .precauciones div img {
+        height: 350px;
+        width: 600px;
+    }
+}
 /* ------- MEDIA QUERIES  800--------*/
 
 @media (max-width: 800px) {
-    .mainindex .precauciones .imgprecauciones img {
-        height: 450px;
-        width: 500px;
-
+    .mainindex .precauciones div img {
+        height: 350px;
+        width: 600px;
     }
 
     .mainindex .equipamiento div img {
         height: 500px;
         width: 500px;
-
     }
 
 }
 
-@media (max-width: 550px) {
-    .mainindex .precauciones .imgprecauciones img {
+@media (max-width: 638px) {
+    .mainindex .precauciones div img {
         height: 350px;
-        width: 400px;
+        width: 500px;
+    }
 
+}
+
+@media (max-width: 550px) { 
+
+    .mainindex .precauciones div img {
+        height: 300px;
+        width: 450px;
     }
 
     .mainindex .equipamiento div img {
         height: 400px;
         width: 400px;
-
+    }
     }
 
-}
 
-@media (max-width: 450px) {
-    .mainindex .precauciones .imgprecauciones img {
+@media (max-width: 500px) {
+    .mainindex .precauciones div img {
         height: 350px;
         width: 350px;
-
     }
-
     .mainindex .equipamiento div img {
         height: 400px;
         width: 400px;
-
     }
 
 }
 
 @media (max-width: 400px) {
-    .mainindex .precauciones .imgprecauciones img {
+    .mainindex .precauciones div img {
         height: 300px;
         width: 300px;
-
     }
 
     .mainindex .equipamiento div img {
         height: 350px;
         width: 350px;
-
     }
 
 }

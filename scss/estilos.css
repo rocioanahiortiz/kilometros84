@@ -76,10 +76,15 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .cascadas .agua div {
   background-color: rgba(0, 0, 0, 0.381);
   margin: 20px;
+  overflow: hidden;
 }
 .mainindex .cascadas .agua div img {
   width: 300px;
   height: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+.mainindex .cascadas .agua div:hover img {
+  transform: scale(1.1);
 }
 .mainindex .cascadas .agua div h3 {
   color: white;
@@ -109,10 +114,15 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   width: 300px;
   background-color: rgba(0, 0, 0, 0.381);
   margin: 20px;
+  overflow: hidden;
 }
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas img {
   width: 300px;
   height: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas:hover img {
+  transform: scale(1.1);
 }
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h3 {
   margin-top: 10px;
@@ -134,29 +144,31 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   color: white;
 }
 .mainindex .beneficios {
+  display: flex;
   color: white;
   padding-top: 40px;
 }
 .mainindex .beneficios div h2 {
   color: rgb(167, 177, 100);
-  text-align: center;
+  text-align: justify;
+  padding-left: 20px;
 }
 .mainindex .beneficios div h3 {
   color: rgb(178, 136, 62);
-  text-align: center;
+  text-align: justify;
   margin: 10px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 .mainindex .beneficios div p {
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
   padding-left: 20px;
   padding-right: 20px;
 }
 .mainindex .beneficios div h4 {
   margin-top: 40px;
-  text-align: center;
+  text-align: justify;
   color: rgb(167, 177, 100);
   margin: 10px;
   padding-left: 10px;
@@ -206,8 +218,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .trekkings-grilla .trekkings-inf p {
   font-size: 20px;
   color: white;
-  margin-left: 10px;
-  text-align: center;
+  margin-left: 20px;
+  text-align: justify;
 }
 .mainindex .trekkings-grilla .trekkings-inf h4 {
   font-size: 25px;
@@ -248,7 +260,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   font-size: 20px;
   color: white;
   margin: 20px;
-  text-align: center;
+  text-align: justify;
 }
 .aventuras .aventurasimg {
   display: flex;
@@ -264,44 +276,50 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 
 /* ------- MAIN PAGE PRECAUCIONES --------*/
 .mainindex .precauciones {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  padding: 10px;
-}
-.mainindex .imgprecauciones {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.mainindex .imgprecauciones img {
-  height: 350px;
-  width: 400px;
-  padding: 10px;
+.mainindex .precauciones div {
+  font-size: 20px;
+  padding: 20px;
+}
+.mainindex .precauciones div h3 {
+  text-align: justify;
+  color: rgb(178, 136, 62);
+}
+.mainindex .precauciones div p,
+.mainindex .precauciones div h2 {
+  color: white;
+  text-align: justify;
+}
+.mainindex .precauciones div img {
+  height: 300px;
+  width: 350px;
+  padding: 20px;
 }
 .mainindex .equipamiento {
   display: flex;
   color: white;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
   justify-content: center;
   align-items: center;
 }
 .mainindex .equipamiento div h2 {
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
   text-align: center;
 }
 .mainindex .equipamiento div p {
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-  padding: 10px;
+  padding: 20px;
+  text-align: justify;
 }
 .mainindex .equipamiento div h4 {
   font-size: 30px;
   text-align: center;
+  color: rgb(178, 136, 62);
+  padding: 10px;
 }
 .mainindex .equipamiento div img {
   height: 350px;
@@ -364,7 +382,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .nosotros p {
   font-size: 20px;
   color: white;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 0;
   margin-top: 20px;
   padding: 20px;
@@ -374,6 +392,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   align-items: center;
 }
 .mainindex .nosotros .mb-3 .form-label {
+  width: 60%;
   font-size: 20px;
   color: rgb(178, 136, 62);
 }
@@ -461,6 +480,16 @@ footer .derechos p {
     height: 300px;
     width: 300px;
     padding: 20px;
+  }
+}
+/* ------- MEDIA QUERIES 950 --------*/
+@media (max-width: 950px) {
+  .mainindex .beneficios {
+    flex-wrap: wrap;
+  }
+  .mainindex .beneficios .indeximagenes img {
+    height: 400px;
+    width: 400px;
   }
 }
 /* ------- MEDIA QUERIES 840 --------*/
@@ -729,44 +758,61 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES  950--------*/
+/* ------- MEDIA QUERIES  1050--------*/
 @media (max-width: 1050px) {
-  .mainindex .precauciones .imgprecauciones img {
-    height: 450px;
-    width: 700px;
+  .mainindex .precauciones {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .mainindex .precauciones div img {
+    height: 300px;
+    width: 300px;
     padding: 20px;
   }
   .mainindex .equipamiento {
     flex-wrap: wrap;
   }
   .mainindex .equipamiento div img {
-    height: 500px;
-    width: 700px;
+    height: 400px;
+    width: 600px;
+  }
+}
+/* ------- MEDIA QUERIES  950--------*/
+@media (max-width: 950px) {
+  .mainindex .precauciones div img {
+    height: 350px;
+    width: 600px;
   }
 }
 /* ------- MEDIA QUERIES  800--------*/
 @media (max-width: 800px) {
-  .mainindex .precauciones .imgprecauciones img {
-    height: 450px;
-    width: 500px;
+  .mainindex .precauciones div img {
+    height: 350px;
+    width: 600px;
   }
   .mainindex .equipamiento div img {
     height: 500px;
     width: 500px;
   }
 }
-@media (max-width: 550px) {
-  .mainindex .precauciones .imgprecauciones img {
+@media (max-width: 638px) {
+  .mainindex .precauciones div img {
     height: 350px;
-    width: 400px;
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .mainindex .precauciones div img {
+    height: 300px;
+    width: 450px;
   }
   .mainindex .equipamiento div img {
     height: 400px;
     width: 400px;
   }
 }
-@media (max-width: 450px) {
-  .mainindex .precauciones .imgprecauciones img {
+@media (max-width: 500px) {
+  .mainindex .precauciones div img {
     height: 350px;
     width: 350px;
   }
@@ -776,7 +822,7 @@ footer .derechos p {
   }
 }
 @media (max-width: 400px) {
-  .mainindex .precauciones .imgprecauciones img {
+  .mainindex .precauciones div img {
     height: 300px;
     width: 300px;
   }
