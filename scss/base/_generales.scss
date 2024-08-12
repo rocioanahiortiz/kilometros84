@@ -6,15 +6,24 @@
 
 }
 
-/* ------- VARIABLES  --------*/
+//! VARIABLES --------*/
 
 $color-principal: rgb(51, 59, 28);
 $color-secundario: rgb(178, 136, 62);
+$color-terciario:yellow;
 
-/* ------- MIXINS --------*/
+//! MIXINS --------*/
 
 @mixin flex ($flex, $justify, $align ) {
     display: $flex;
     justify-content: $justify;
     align-items: $align;
+}
+
+//! EXTENDS --------*/
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

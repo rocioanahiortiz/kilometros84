@@ -1,4 +1,4 @@
-/* ------- MAIN PAGE INDEX --------*/
+//! ------- MAIN PAGE INDEX --------*/
 
 .mainindex {
     background-image: url(../img/extras/1.jpg);
@@ -22,7 +22,7 @@
 
         p {
             margin: 40px;
-            color: rgb(255, 255, 255);
+            color: $color-terciario;
             font-size: 25px;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.071);
@@ -69,13 +69,18 @@
                     font-size: 25px;
                     text-align: center;
                     margin-top: 10px;
-                    
+
 
 
                     a {
                         text-decoration: none;
                         font-size: 20px;
                         color: rgb(255, 255, 255);
+                        transition: color 0.5s;
+
+                        &:hover {
+                            color: $color-terciario;
+                        }
                     }
 
 
@@ -85,119 +90,126 @@
     }
 
 
-.otrasaventuras {
-    h2 {
-        color: white;
-        font-size: 40px;
-        text-align: center;
-        margin: 30px;
-    }
+    .otrasaventuras {
+        h2 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin: 30px;
+        }
 
-    .aventuras-index {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        .aventuras-index {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
 
-        .aventuras-tarjetas {
-            height: 500px;
-            width: 300px;
-            background-color: rgba(0, 0, 0, 0.381);
-            margin: 20px;
-            overflow: hidden;
-
-            img {
+            .aventuras-tarjetas {
+                height: 400px;
                 width: 300px;
-                height: 300px;
-                transition: transform 0.3s ease-in-out;
-            }
+                background-color: rgba(0, 0, 0, 0.381);
+                margin: 20px;
+                overflow: hidden;
 
-            &:hover img {
-                transform: scale(1.1);
-            }
+                img {
+                    width: 300px;
+                    height: 300px;
+                    transition: transform 0.3s ease-in-out;
+                }
 
-            h3 {
-                margin-top: 10px;
-                font-size: 25px;
-                color: white;
-                text-align: center;
-            }
+                &:hover img {
+                    transform: scale(1.1);
+                }
 
-            p {
-                font-size: 18px;
-                color: white;
-                text-align: center;
-            }
-
-            h4 {
-                font-size: 22px;
-                text-align: center;
-
-                a {
-                    text-decoration: none;
+                h3 {
+                    margin-top: 10px;
+                    font-size: 25px;
                     color: white;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: white;
+                    text-align: justify;
+                    padding: 10px;
+                }
+
+                h4 {
+                    font-size: 22px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        transition: color 0.5s;
+
+                        &:hover {
+                            color: $color-terciario;
+                        }
+
+                    }
                 }
             }
         }
     }
-}
 
-.beneficios {
-    display: flex;
-    color: white;
-    padding-top: 40px;
-
-    div {
-        h2 {
-            color: rgb(167, 177, 100);
-            text-align: justify;
-            padding-left: 20px;
-        }
-
-        h3 {
-            color: $color-secundario;
-            text-align: justify;
-            margin: 10px;
-            padding-left: 10px;
-            padding-right: 20px;
-        }
-
-        p {
-            font-size: 20px;
-            text-align: justify;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        h4 {
-            margin-top: 40px;
-            text-align: justify;
-            color: rgb(167, 177, 100);
-            margin: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-    }
-
-    .indeximagenes {
+    .beneficios {
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        color: white;
+        padding-top: 40px;
 
-        img {
-            height: 300px;
-            width: 500px;
-            padding: 20px;
+        div {
+            h2 {
+                color: rgb(167, 177, 100);
+                text-align: justify;
+                padding-left: 20px;
+            }
+
+            h3 {
+                color: $color-secundario;
+                text-align: justify;
+                margin: 10px;
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: justify;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            h4 {
+                margin-top: 40px;
+                text-align: justify;
+                color: rgb(167, 177, 100);
+                margin: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        .indeximagenes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            img {
+                height: 300px;
+                width: 500px;
+                padding: 20px;
+            }
         }
     }
 }
-}
 
-/* ------- MAIN PAG TREKKINGS --------*/
+//! ------- MAIN PAG TREKKINGS --------*/
 
 .mainindex {
     h2 {
-        color: white;
+        color:$color-terciario;
         font-size: 30px;
         text-align: center;
         padding: 10px;
@@ -269,7 +281,7 @@
 }
 
 
-/* ------- MAIN PAG AVENTURAS --------*/
+//! ------- MAIN PAG AVENTURAS --------*/
 .aventuras {
     padding: 10px;
 
@@ -280,6 +292,7 @@
             background-color: rgba(0, 0, 0, 0.333);
             font-size: 30px;
             text-align: center;
+            color: white;
         }
 
         p {
@@ -306,7 +319,7 @@
 }
 
 
-/* ------- MAIN PAGE PRECAUCIONES --------*/
+//! ------- MAIN PAGE PRECAUCIONES --------*/
 .mainindex {
     .precauciones {
         @include flex (flex, space-around, center);
@@ -318,12 +331,21 @@
             h3 {
                 text-align: justify;
                 color: $color-secundario;
+                margin-left: 20px;
             }
 
-            p,
-            h2 {
+            p {
                 color: white;
                 text-align: justify;
+                margin-left: 20px;
+
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+                margin-left: 20px;
+
             }
 
         }
@@ -332,25 +354,32 @@
 
             img {
                 height: 300px;
-                width: 350px;
+                width: 450px;
                 padding: 20px;
+                transition: transform 0.3s
             }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
         }
     }
 
     .equipamiento {
-        display: flex;
+
         color: white;
         font-size: 20px;
         text-align: justify;
         padding: 20px;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
+
 
         div {
             h2 {
                 padding: 20px;
                 text-align: center;
+                color: white;
             }
 
             p {
@@ -359,11 +388,13 @@
 
             }
 
+
             h4 {
                 font-size: 30px;
                 text-align: center;
-                color: $color-secundario;
+                color: $color-terciario;
                 padding: 10px;
+
             }
 
         }
@@ -373,9 +404,12 @@
                 height: 350px;
                 width: 500px;
                 padding: 20px;
-
+                transition: transform 0.3s
             }
 
+            &:hover img {
+                transform: scale(1.05);
+            }
         }
 
 
@@ -384,7 +418,7 @@
 }
 
 
-/* ------- MAIN PAGE NOSOTROS --------*/
+//!------- MAIN PAGE NOSOTROS --------*/
 
 .mainindex {
 

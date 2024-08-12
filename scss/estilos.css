@@ -5,8 +5,12 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-/* ------- VARIABLES  --------*/
-/* ------- MIXINS --------*/
+.mainindex .equipamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   background-color: rgb(51, 59, 28);
   padding: 10px;
@@ -17,6 +21,7 @@ header {
 header h1 {
   color: white;
   font-size: 80px;
+  margin-left: 20px;
 }
 header .navbar .container-fluid {
   background-color: rgb(51, 59, 28);
@@ -25,11 +30,14 @@ header .navbar .container-fluid .navbar-toggler {
   background-color: white;
 }
 header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
-  font-size: 20px;
+  font-size: 22px !important;
   color: white !important;
+  transition: color 0.3s;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+  color: yellow !important;
 }
 
-/* ------- MAIN PAGE INDEX --------*/
 .mainindex {
   background-image: url(../img/extras/1.jpg);
   background-attachment: fixed;
@@ -51,7 +59,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 }
 .mainindex .presentacion p {
   margin: 40px;
-  color: rgb(255, 255, 255);
+  color: yellow;
   font-size: 25px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.071);
@@ -96,6 +104,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   text-decoration: none;
   font-size: 20px;
   color: rgb(255, 255, 255);
+  transition: color 0.5s;
+}
+.mainindex .cascadas .agua div h3 a:hover {
+  color: yellow;
 }
 .mainindex .otrasaventuras h2 {
   color: white;
@@ -110,7 +122,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   flex-wrap: wrap;
 }
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas {
-  height: 500px;
+  height: 400px;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.381);
   margin: 20px;
@@ -133,7 +145,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas p {
   font-size: 18px;
   color: white;
-  text-align: center;
+  text-align: justify;
+  padding: 10px;
 }
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h4 {
   font-size: 22px;
@@ -142,6 +155,10 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h4 a {
   text-decoration: none;
   color: white;
+  transition: color 0.5s;
+}
+.mainindex .otrasaventuras .aventuras-index .aventuras-tarjetas h4 a:hover {
+  color: yellow;
 }
 .mainindex .beneficios {
   display: flex;
@@ -185,9 +202,8 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   padding: 20px;
 }
 
-/* ------- MAIN PAG TREKKINGS --------*/
 .mainindex h2 {
-  color: white;
+  color: yellow;
   font-size: 30px;
   text-align: center;
   padding: 10px;
@@ -245,7 +261,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   margin: 20px;
 }
 
-/* ------- MAIN PAG AVENTURAS --------*/
 .aventuras {
   padding: 10px;
 }
@@ -255,6 +270,7 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   background-color: rgba(0, 0, 0, 0.333);
   font-size: 30px;
   text-align: center;
+  color: white;
 }
 .aventuras div p {
   font-size: 20px;
@@ -274,7 +290,6 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
   margin: 5px;
 }
 
-/* ------- MAIN PAGE PRECAUCIONES --------*/
 .mainindex .precauciones {
   display: flex;
   justify-content: space-around;
@@ -287,29 +302,37 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .precauciones div h3 {
   text-align: justify;
   color: rgb(178, 136, 62);
+  margin-left: 20px;
 }
-.mainindex .precauciones div p,
-.mainindex .precauciones div h2 {
+.mainindex .precauciones div p {
   color: white;
   text-align: justify;
+  margin-left: 20px;
+}
+.mainindex .precauciones div h2 {
+  color: white;
+  text-align: center;
+  margin-left: 20px;
 }
 .mainindex .precauciones div img {
   height: 300px;
-  width: 350px;
+  width: 450px;
   padding: 20px;
+  transition: transform 0.3s;
+}
+.mainindex .precauciones div:hover img {
+  transform: scale(1.1);
 }
 .mainindex .equipamiento {
-  display: flex;
   color: white;
   font-size: 20px;
   text-align: justify;
   padding: 20px;
-  justify-content: center;
-  align-items: center;
 }
 .mainindex .equipamiento div h2 {
   padding: 20px;
   text-align: center;
+  color: white;
 }
 .mainindex .equipamiento div p {
   padding: 20px;
@@ -318,16 +341,19 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a {
 .mainindex .equipamiento div h4 {
   font-size: 30px;
   text-align: center;
-  color: rgb(178, 136, 62);
+  color: yellow;
   padding: 10px;
 }
 .mainindex .equipamiento div img {
   height: 350px;
   width: 500px;
   padding: 20px;
+  transition: transform 0.3s;
+}
+.mainindex .equipamiento div:hover img {
+  transform: scale(1.05);
 }
 
-/* ------- MAIN PAGE NOSOTROS --------*/
 .mainindex .grillafotos {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -444,9 +470,7 @@ footer .derechos p {
   text-align: center;
 }
 
-/* ------- MEDIA QUERIES PAGE INDEX + TREKKINGS + footer-------*/
-/* ------- MEDIA QUERIES  1110--------*/
-@media (max-width: 1110px) {
+@media (max-width: 1150px) {
   header h1 {
     font-size: 80px;
   }
@@ -474,7 +498,7 @@ footer .derechos p {
     margin: 20px;
   }
   .mainindex .trekkings-grilla .trekkings-inf p {
-    text-align: center;
+    text-align: justify;
   }
   .mainindex .beneficios .indeximagenes img {
     height: 300px;
@@ -482,7 +506,6 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES 950 --------*/
 @media (max-width: 950px) {
   .mainindex .beneficios {
     flex-wrap: wrap;
@@ -492,7 +515,6 @@ footer .derechos p {
     width: 400px;
   }
 }
-/* ------- MEDIA QUERIES 840 --------*/
 @media (max-width: 890px) {
   .mainindex .beneficios .indeximagenes img {
     height: 300px;
@@ -500,7 +522,6 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES  775--------*/
 @media (max-width: 775px) {
   .mainindex .beneficios .indeximagenes img {
     height: 300px;
@@ -508,7 +529,6 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES 720 --------*/
 @media (max-width: 720px) {
   header h1 {
     font-size: 60px;
@@ -555,7 +575,6 @@ footer .derechos p {
     height: auto;
   }
 }
-/* ------- MEDIA QUERIES 650--------*/
 @media (max-width: 650px) {
   header h1 {
     font-size: 50px;
@@ -565,6 +584,7 @@ footer .derechos p {
   }
   .mainindex .presentacion p {
     margin: 25px;
+    color: rgba(255, 255, 0, 0.895);
   }
   .mainindex .cascadas h2,
   .mainindex .otrasaventuras h2 {
@@ -639,7 +659,6 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES  550 --------*/
 @media (max-width: 550px) {
   header h1 {
     color: white;
@@ -688,22 +707,18 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES  424--------*/
 @media (max-width: 420px) {
   .mainindex .presentacion h2 {
     font-size: 35px;
   }
   .mainindex .presentacion p {
     font-size: 25px;
-    color: black;
   }
   .mainindex .cascadas div img {
     width: 250px;
     height: 250px;
   }
 }
-/* ------- MEDIA QUERIES PAGE AVENTURAS -------*/
-/* ------- MEDIA QUERIES  1050--------*/
 @media (max-width: 1169px) {
   .mainindex .aventuras .aventurasimg img {
     height: 300px;
@@ -746,8 +761,6 @@ footer .derechos p {
     padding: 15px;
   }
 }
-/* ------- MEDIA QUERIES PAGE PRECAUCIONES -------*/
-/* ------- MEDIA QUERIES  1200--------*/
 @media (max-width: 1200px) {
   .mainindex .precauciones .imgprecauciones {
     flex-wrap: wrap;
@@ -758,7 +771,6 @@ footer .derechos p {
     padding: 20px;
   }
 }
-/* ------- MEDIA QUERIES  1050--------*/
 @media (max-width: 1050px) {
   .mainindex .precauciones {
     flex-wrap: wrap;
@@ -777,14 +789,12 @@ footer .derechos p {
     width: 600px;
   }
 }
-/* ------- MEDIA QUERIES  950--------*/
 @media (max-width: 950px) {
   .mainindex .precauciones div img {
     height: 350px;
     width: 600px;
   }
 }
-/* ------- MEDIA QUERIES  800--------*/
 @media (max-width: 800px) {
   .mainindex .precauciones div img {
     height: 350px;
