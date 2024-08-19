@@ -422,6 +422,12 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
   font-size: 20px;
   color: rgb(178, 136, 62);
 }
+.mainindex .nosotros .btn {
+  margin-left: 20px !important;
+  background-color: rgb(178, 136, 62);
+  color: white;
+  border-color: rgb(178, 136, 62);
+}
 
 footer {
   background-color: rgb(51, 59, 28);
@@ -638,7 +644,7 @@ footer .derechos p {
   }
   .mainindex .trekkings-grilla .trekkings-inf p {
     font-size: 18px;
-    text-align: center;
+    text-align: justify;
   }
   .mainindex .trekkings-grilla .trekkings-inf h3 {
     font-size: 25px;
@@ -686,7 +692,6 @@ footer .derechos p {
   }
   .mainindex .trekkings-grilla .trekkings-inf p {
     font-size: 18px;
-    text-align: center;
   }
   .mainindex .trekkings-grilla .trekkings-inf h3 {
     font-size: 22px;

@@ -209,7 +209,7 @@
 
 .mainindex {
     h2 {
-        color:$color-terciario;
+        color: $color-terciario;
         font-size: 30px;
         text-align: center;
         padding: 10px;
@@ -503,6 +503,14 @@
                 font-size: 20px;
                 color: rgb(178, 136, 62);
             }
+
+        }
+
+        .btn {
+            margin-left: 20px !important;
+            background-color: rgb(178, 136, 62);
+            color: white;
+            border-color: rgb(178, 136, 62);
         }
     }
 
